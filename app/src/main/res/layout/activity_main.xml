@@ -25,17 +25,47 @@
           android:padding="10dp"
           android:gravity="top|left"
           android:hint="Введите текст для перевода..."
-
           />
    </RelativeLayout>
 
 
+<TextView
+    android:layout_width="60dp"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:text="англ"
 
+    android:layout_alignParentLeft="true"
+    android:textSize="20sp"
+    android:id="@+id/englishText"/>
+   <ImageButton
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:background="@color/colorPrimary"
+       android:src="@drawable/ic_sync_black_24dp"
+       android:padding="5dp"
+       android:layout_marginRight="15dp"
+
+
+       android:id="@+id/changeLanguageButton"
+       android:layout_centerInParent="true"
+       android:layout_toRightOf="@+id/englishText"/>
+
+   <TextView
+       android:layout_width="60dp"
+       android:layout_height="wrap_content"
+       android:layout_centerInParent="true"
+       android:text="рус"
+
+     android:layout_toRightOf="@+id/changeLanguageButton"
+       android:textSize="20sp"
+       android:id="@+id/rusText"/>
    <Button
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
-       android:padding="15dp"
+       android:padding="2dp"
        android:layout_centerInParent="true"
+       android:layout_alignParentRight="true"
 
        android:layout_margin="10dp"
        android:id="@+id/translate_button"
